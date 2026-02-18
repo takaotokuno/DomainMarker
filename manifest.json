@@ -1,0 +1,14 @@
+{
+  "name": "Domain Marker",
+  "version": "1.0.0",
+  "description": "Displays a color bar to prevent environment mistakes.",
+  "manifest_version": 3,
+  "content_scripts": [{
+    "matches": [
+        "https://www.google.com/*",
+        "https://www.yahoo.co.jp/*"
+    ],
+    "js": ["config.js", "content.js"],
+    "run_at": "document_start"
+  }]
+}
